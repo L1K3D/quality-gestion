@@ -1,0 +1,75 @@
+import { QueueExam } from '../types/aurora';
+
+export const INITIAL_QUEUE_EXAMS: QueueExam[] = [
+  {
+    id: 'OC-005',
+    paciente: 'Sr. Carlos Mendes',
+    exame: 'RM Crânio',
+    origem: 'Internação',
+    turno: 'Noite',
+    convenio: 'SulAmérica',
+    elapsedMinutes: 44 * 60 + 20, // 44h 20m
+    cid: 'G45.9',
+    indicacao: 'Déficit neurológico focal súbito; definir alta.',
+    crm: 'CRM-SP 142.890',
+    status: 'pendente',
+    arrivalOrder: 1,
+  },
+  {
+    id: 'AUR-841',
+    paciente: 'Dona Helena Vasconcelos',
+    exame: 'TC Tórax',
+    origem: 'Clínica externa',
+    turno: 'Manhã',
+    convenio: 'Bradesco',
+    elapsedMinutes: 39 * 60 + 15, // 39h 15m
+    isReturnPriority: true,
+    cid: 'J18.9',
+    indicacao: 'Retorno regularizado: tosse persistente há 21 dias.',
+    crm: 'CRM-SP 118.432',
+    status: 'pendente',
+    arrivalOrder: 2,
+  },
+  {
+    id: 'AUR-859',
+    paciente: 'Mariana Costa',
+    exame: 'USG Abdômen',
+    origem: 'Internação',
+    turno: 'Noite',
+    convenio: 'Unimed',
+    elapsedMinutes: 37 * 60 + 40, // 37h 40m
+    cid: 'K80.2',
+    indicacao: 'Dor em hipocôndrio direito e febre.',
+    crm: 'CRM-SP 155.201',
+    status: 'pendente',
+    arrivalOrder: 3,
+  },
+  {
+    id: 'AUR-880',
+    paciente: 'Fernanda Lima',
+    exame: 'RM Joelho',
+    origem: 'Clínica externa',
+    turno: 'Manhã',
+    convenio: 'Porto Seguro',
+    elapsedMinutes: 6 * 60 + 30, // 6h 30m
+    cid: 'S83.5',
+    indicacao: 'Entorse esportiva; suspeita de LCA.',
+    crm: 'CRM-SP 164.712',
+    status: 'pendente',
+    arrivalOrder: 4,
+  },
+  {
+    id: 'AUR-883',
+    paciente: 'Lucas Santos',
+    exame: 'TC Face',
+    origem: 'Ambulatório',
+    turno: 'Manhã',
+    convenio: 'Particular',
+    elapsedMinutes: 2 * 60 + 15, // 2h 15m
+    cid: 'J32.9',
+    indicacao: 'Rinossinusite crônica refratária.',
+    crm: 'CRM-SP 129.308',
+    status: 'pendente',
+    arrivalOrder: 5,
+  },
+];

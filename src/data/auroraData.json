@@ -1,0 +1,1610 @@
+{
+  "metadata": {
+    "totalRegistros": 100,
+    "fonte": "Caso1_CentroMedicoAurora_Base.xlsx (aba Dados)",
+    "universoTrimestre": 1140
+  },
+  "paretoGeral": [
+    {
+      "motivo": "Pedido médico incompleto",
+      "count": 39,
+      "percent": 39.0,
+      "cumulativeCount": 39,
+      "cumulativePercent": 39.0
+    },
+    {
+      "motivo": "Fila de laudos",
+      "count": 31,
+      "percent": 31.0,
+      "cumulativeCount": 70,
+      "cumulativePercent": 70.0
+    },
+    {
+      "motivo": "Falha na realização do exame",
+      "count": 10,
+      "percent": 10.0,
+      "cumulativeCount": 80,
+      "cumulativePercent": 80.0
+    },
+    {
+      "motivo": "Erro de cadastro",
+      "count": 8,
+      "percent": 8.0,
+      "cumulativeCount": 88,
+      "cumulativePercent": 88.0
+    },
+    {
+      "motivo": "Autorização do convênio pendente",
+      "count": 7,
+      "percent": 7.0,
+      "cumulativeCount": 95,
+      "cumulativePercent": 95.0
+    },
+    {
+      "motivo": "Erro de digitação no laudo",
+      "count": 5,
+      "percent": 5.0,
+      "cumulativeCount": 100,
+      "cumulativePercent": 100.0
+    }
+  ],
+  "paretoEstratificado": [
+    {
+      "origem": "Clínica externa",
+      "count": 31,
+      "percent": 79.5,
+      "cumulativeCount": 31,
+      "cumulativePercent": 79.5
+    },
+    {
+      "origem": "Ambulatório do hospital",
+      "count": 6,
+      "percent": 15.4,
+      "cumulativeCount": 37,
+      "cumulativePercent": 94.9
+    },
+    {
+      "origem": "Internação",
+      "count": 2,
+      "percent": 5.1,
+      "cumulativeCount": 39,
+      "cumulativePercent": 100.0
+    }
+  ],
+  "evidencias": {
+    "pedidoIncompleto": {
+      "total": 39,
+      "clinicaExternaCount": 31,
+      "clinicaExternaPct": 79.5,
+      "evolucaoMensal": [
+        {
+          "mes": "Julho",
+          "count": 6
+        },
+        {
+          "mes": "Agosto",
+          "count": 16
+        },
+        {
+          "mes": "Setembro",
+          "count": 17
+        }
+      ],
+      "crescimentoJulSetPct": 183.3
+    },
+    "filaLaudos": {
+      "total": 31,
+      "noiteCount": 28,
+      "noitePct": 90.3,
+      "internacaoCount": 15,
+      "internacaoPct": 48.4
+    },
+    "oc005": {
+      "id": "OC-005",
+      "mes": "Julho",
+      "turno": "Noite",
+      "origem": "Internação",
+      "tipoExame": "Ressonância",
+      "motivo": "Fila de laudos"
+    }
+  },
+  "dimensoes": {
+    "origem": [
+      "Ambulatório do hospital",
+      "Clínica externa",
+      "Internação"
+    ],
+    "turno": [
+      "Manhã",
+      "Tarde",
+      "Noite"
+    ],
+    "mes": [
+      "Julho",
+      "Agosto",
+      "Setembro"
+    ],
+    "tipoExame": [
+      "Raio-X",
+      "Ressonância",
+      "Tomografia",
+      "Ultrassonografia"
+    ]
+  },
+  "estratificacoes": {
+    "Pedido médico incompleto": {
+      "total": 39,
+      "porOrigem": [
+        {
+          "categoria": "Clínica externa",
+          "count": 31,
+          "percent": 79.5,
+          "cumulativeCount": 31,
+          "cumulativePercent": 79.5
+        },
+        {
+          "categoria": "Ambulatório do hospital",
+          "count": 6,
+          "percent": 15.4,
+          "cumulativeCount": 37,
+          "cumulativePercent": 94.9
+        },
+        {
+          "categoria": "Internação",
+          "count": 2,
+          "percent": 5.1,
+          "cumulativeCount": 39,
+          "cumulativePercent": 100.0
+        }
+      ],
+      "porTurno": [
+        {
+          "categoria": "Manhã",
+          "count": 22,
+          "percent": 56.4,
+          "cumulativeCount": 22,
+          "cumulativePercent": 56.4
+        },
+        {
+          "categoria": "Tarde",
+          "count": 13,
+          "percent": 33.3,
+          "cumulativeCount": 35,
+          "cumulativePercent": 89.7
+        },
+        {
+          "categoria": "Noite",
+          "count": 4,
+          "percent": 10.3,
+          "cumulativeCount": 39,
+          "cumulativePercent": 100.0
+        }
+      ],
+      "porMes": [
+        {
+          "categoria": "Setembro",
+          "count": 17,
+          "percent": 43.6,
+          "cumulativeCount": 17,
+          "cumulativePercent": 43.6
+        },
+        {
+          "categoria": "Agosto",
+          "count": 16,
+          "percent": 41.0,
+          "cumulativeCount": 33,
+          "cumulativePercent": 84.6
+        },
+        {
+          "categoria": "Julho",
+          "count": 6,
+          "percent": 15.4,
+          "cumulativeCount": 39,
+          "cumulativePercent": 100.0
+        }
+      ],
+      "porTipoExame": [
+        {
+          "categoria": "Ressonância",
+          "count": 13,
+          "percent": 33.3,
+          "cumulativeCount": 13,
+          "cumulativePercent": 33.3
+        },
+        {
+          "categoria": "Tomografia",
+          "count": 10,
+          "percent": 25.6,
+          "cumulativeCount": 23,
+          "cumulativePercent": 59.0
+        },
+        {
+          "categoria": "Raio-X",
+          "count": 9,
+          "percent": 23.1,
+          "cumulativeCount": 32,
+          "cumulativePercent": 82.1
+        },
+        {
+          "categoria": "Ultrassonografia",
+          "count": 7,
+          "percent": 17.9,
+          "cumulativeCount": 39,
+          "cumulativePercent": 100.0
+        }
+      ]
+    },
+    "Falha na realização do exame": {
+      "total": 10,
+      "porOrigem": [
+        {
+          "categoria": "Ambulatório do hospital",
+          "count": 4,
+          "percent": 40.0,
+          "cumulativeCount": 4,
+          "cumulativePercent": 40.0
+        },
+        {
+          "categoria": "Clínica externa",
+          "count": 4,
+          "percent": 40.0,
+          "cumulativeCount": 8,
+          "cumulativePercent": 80.0
+        },
+        {
+          "categoria": "Internação",
+          "count": 2,
+          "percent": 20.0,
+          "cumulativeCount": 10,
+          "cumulativePercent": 100.0
+        }
+      ],
+      "porTurno": [
+        {
+          "categoria": "Noite",
+          "count": 4,
+          "percent": 40.0,
+          "cumulativeCount": 4,
+          "cumulativePercent": 40.0
+        },
+        {
+          "categoria": "Manhã",
+          "count": 3,
+          "percent": 30.0,
+          "cumulativeCount": 7,
+          "cumulativePercent": 70.0
+        },
+        {
+          "categoria": "Tarde",
+          "count": 3,
+          "percent": 30.0,
+          "cumulativeCount": 10,
+          "cumulativePercent": 100.0
+        }
+      ],
+      "porMes": [
+        {
+          "categoria": "Setembro",
+          "count": 6,
+          "percent": 60.0,
+          "cumulativeCount": 6,
+          "cumulativePercent": 60.0
+        },
+        {
+          "categoria": "Julho",
+          "count": 3,
+          "percent": 30.0,
+          "cumulativeCount": 9,
+          "cumulativePercent": 90.0
+        },
+        {
+          "categoria": "Agosto",
+          "count": 1,
+          "percent": 10.0,
+          "cumulativeCount": 10,
+          "cumulativePercent": 100.0
+        }
+      ],
+      "porTipoExame": [
+        {
+          "categoria": "Raio-X",
+          "count": 4,
+          "percent": 40.0,
+          "cumulativeCount": 4,
+          "cumulativePercent": 40.0
+        },
+        {
+          "categoria": "Tomografia",
+          "count": 3,
+          "percent": 30.0,
+          "cumulativeCount": 7,
+          "cumulativePercent": 70.0
+        },
+        {
+          "categoria": "Ressonância",
+          "count": 2,
+          "percent": 20.0,
+          "cumulativeCount": 9,
+          "cumulativePercent": 90.0
+        },
+        {
+          "categoria": "Ultrassonografia",
+          "count": 1,
+          "percent": 10.0,
+          "cumulativeCount": 10,
+          "cumulativePercent": 100.0
+        }
+      ]
+    },
+    "Fila de laudos": {
+      "total": 31,
+      "porOrigem": [
+        {
+          "categoria": "Internação",
+          "count": 15,
+          "percent": 48.4,
+          "cumulativeCount": 15,
+          "cumulativePercent": 48.4
+        },
+        {
+          "categoria": "Ambulatório do hospital",
+          "count": 12,
+          "percent": 38.7,
+          "cumulativeCount": 27,
+          "cumulativePercent": 87.1
+        },
+        {
+          "categoria": "Clínica externa",
+          "count": 4,
+          "percent": 12.9,
+          "cumulativeCount": 31,
+          "cumulativePercent": 100.0
+        }
+      ],
+      "porTurno": [
+        {
+          "categoria": "Noite",
+          "count": 28,
+          "percent": 90.3,
+          "cumulativeCount": 28,
+          "cumulativePercent": 90.3
+        },
+        {
+          "categoria": "Manhã",
+          "count": 2,
+          "percent": 6.5,
+          "cumulativeCount": 30,
+          "cumulativePercent": 96.8
+        },
+        {
+          "categoria": "Tarde",
+          "count": 1,
+          "percent": 3.2,
+          "cumulativeCount": 31,
+          "cumulativePercent": 100.0
+        }
+      ],
+      "porMes": [
+        {
+          "categoria": "Setembro",
+          "count": 16,
+          "percent": 51.6,
+          "cumulativeCount": 16,
+          "cumulativePercent": 51.6
+        },
+        {
+          "categoria": "Agosto",
+          "count": 8,
+          "percent": 25.8,
+          "cumulativeCount": 24,
+          "cumulativePercent": 77.4
+        },
+        {
+          "categoria": "Julho",
+          "count": 7,
+          "percent": 22.6,
+          "cumulativeCount": 31,
+          "cumulativePercent": 100.0
+        }
+      ],
+      "porTipoExame": [
+        {
+          "categoria": "Raio-X",
+          "count": 15,
+          "percent": 48.4,
+          "cumulativeCount": 15,
+          "cumulativePercent": 48.4
+        },
+        {
+          "categoria": "Tomografia",
+          "count": 10,
+          "percent": 32.3,
+          "cumulativeCount": 25,
+          "cumulativePercent": 80.6
+        },
+        {
+          "categoria": "Ressonância",
+          "count": 4,
+          "percent": 12.9,
+          "cumulativeCount": 29,
+          "cumulativePercent": 93.5
+        },
+        {
+          "categoria": "Ultrassonografia",
+          "count": 2,
+          "percent": 6.5,
+          "cumulativeCount": 31,
+          "cumulativePercent": 100.0
+        }
+      ]
+    },
+    "Erro de cadastro": {
+      "total": 8,
+      "porOrigem": [
+        {
+          "categoria": "Ambulatório do hospital",
+          "count": 5,
+          "percent": 62.5,
+          "cumulativeCount": 5,
+          "cumulativePercent": 62.5
+        },
+        {
+          "categoria": "Clínica externa",
+          "count": 2,
+          "percent": 25.0,
+          "cumulativeCount": 7,
+          "cumulativePercent": 87.5
+        },
+        {
+          "categoria": "Internação",
+          "count": 1,
+          "percent": 12.5,
+          "cumulativeCount": 8,
+          "cumulativePercent": 100.0
+        }
+      ],
+      "porTurno": [
+        {
+          "categoria": "Manhã",
+          "count": 4,
+          "percent": 50.0,
+          "cumulativeCount": 4,
+          "cumulativePercent": 50.0
+        },
+        {
+          "categoria": "Tarde",
+          "count": 4,
+          "percent": 50.0,
+          "cumulativeCount": 8,
+          "cumulativePercent": 100.0
+        }
+      ],
+      "porMes": [
+        {
+          "categoria": "Agosto",
+          "count": 3,
+          "percent": 37.5,
+          "cumulativeCount": 3,
+          "cumulativePercent": 37.5
+        },
+        {
+          "categoria": "Setembro",
+          "count": 3,
+          "percent": 37.5,
+          "cumulativeCount": 6,
+          "cumulativePercent": 75.0
+        },
+        {
+          "categoria": "Julho",
+          "count": 2,
+          "percent": 25.0,
+          "cumulativeCount": 8,
+          "cumulativePercent": 100.0
+        }
+      ],
+      "porTipoExame": [
+        {
+          "categoria": "Tomografia",
+          "count": 4,
+          "percent": 50.0,
+          "cumulativeCount": 4,
+          "cumulativePercent": 50.0
+        },
+        {
+          "categoria": "Ultrassonografia",
+          "count": 2,
+          "percent": 25.0,
+          "cumulativeCount": 6,
+          "cumulativePercent": 75.0
+        },
+        {
+          "categoria": "Raio-X",
+          "count": 1,
+          "percent": 12.5,
+          "cumulativeCount": 7,
+          "cumulativePercent": 87.5
+        },
+        {
+          "categoria": "Ressonância",
+          "count": 1,
+          "percent": 12.5,
+          "cumulativeCount": 8,
+          "cumulativePercent": 100.0
+        }
+      ]
+    },
+    "Erro de digitação no laudo": {
+      "total": 5,
+      "porOrigem": [
+        {
+          "categoria": "Internação",
+          "count": 3,
+          "percent": 60.0,
+          "cumulativeCount": 3,
+          "cumulativePercent": 60.0
+        },
+        {
+          "categoria": "Ambulatório do hospital",
+          "count": 1,
+          "percent": 20.0,
+          "cumulativeCount": 4,
+          "cumulativePercent": 80.0
+        },
+        {
+          "categoria": "Clínica externa",
+          "count": 1,
+          "percent": 20.0,
+          "cumulativeCount": 5,
+          "cumulativePercent": 100.0
+        }
+      ],
+      "porTurno": [
+        {
+          "categoria": "Tarde",
+          "count": 3,
+          "percent": 60.0,
+          "cumulativeCount": 3,
+          "cumulativePercent": 60.0
+        },
+        {
+          "categoria": "Manhã",
+          "count": 2,
+          "percent": 40.0,
+          "cumulativeCount": 5,
+          "cumulativePercent": 100.0
+        }
+      ],
+      "porMes": [
+        {
+          "categoria": "Agosto",
+          "count": 3,
+          "percent": 60.0,
+          "cumulativeCount": 3,
+          "cumulativePercent": 60.0
+        },
+        {
+          "categoria": "Julho",
+          "count": 1,
+          "percent": 20.0,
+          "cumulativeCount": 4,
+          "cumulativePercent": 80.0
+        },
+        {
+          "categoria": "Setembro",
+          "count": 1,
+          "percent": 20.0,
+          "cumulativeCount": 5,
+          "cumulativePercent": 100.0
+        }
+      ],
+      "porTipoExame": [
+        {
+          "categoria": "Raio-X",
+          "count": 2,
+          "percent": 40.0,
+          "cumulativeCount": 2,
+          "cumulativePercent": 40.0
+        },
+        {
+          "categoria": "Ultrassonografia",
+          "count": 2,
+          "percent": 40.0,
+          "cumulativeCount": 4,
+          "cumulativePercent": 80.0
+        },
+        {
+          "categoria": "Tomografia",
+          "count": 1,
+          "percent": 20.0,
+          "cumulativeCount": 5,
+          "cumulativePercent": 100.0
+        }
+      ]
+    },
+    "Autorização do convênio pendente": {
+      "total": 7,
+      "porOrigem": [
+        {
+          "categoria": "Ambulatório do hospital",
+          "count": 5,
+          "percent": 71.4,
+          "cumulativeCount": 5,
+          "cumulativePercent": 71.4
+        },
+        {
+          "categoria": "Clínica externa",
+          "count": 2,
+          "percent": 28.6,
+          "cumulativeCount": 7,
+          "cumulativePercent": 100.0
+        }
+      ],
+      "porTurno": [
+        {
+          "categoria": "Tarde",
+          "count": 4,
+          "percent": 57.1,
+          "cumulativeCount": 4,
+          "cumulativePercent": 57.1
+        },
+        {
+          "categoria": "Manhã",
+          "count": 3,
+          "percent": 42.9,
+          "cumulativeCount": 7,
+          "cumulativePercent": 100.0
+        }
+      ],
+      "porMes": [
+        {
+          "categoria": "Agosto",
+          "count": 5,
+          "percent": 71.4,
+          "cumulativeCount": 5,
+          "cumulativePercent": 71.4
+        },
+        {
+          "categoria": "Julho",
+          "count": 1,
+          "percent": 14.3,
+          "cumulativeCount": 6,
+          "cumulativePercent": 85.7
+        },
+        {
+          "categoria": "Setembro",
+          "count": 1,
+          "percent": 14.3,
+          "cumulativeCount": 7,
+          "cumulativePercent": 100.0
+        }
+      ],
+      "porTipoExame": [
+        {
+          "categoria": "Raio-X",
+          "count": 3,
+          "percent": 42.9,
+          "cumulativeCount": 3,
+          "cumulativePercent": 42.9
+        },
+        {
+          "categoria": "Ressonância",
+          "count": 2,
+          "percent": 28.6,
+          "cumulativeCount": 5,
+          "cumulativePercent": 71.4
+        },
+        {
+          "categoria": "Ultrassonografia",
+          "count": 2,
+          "percent": 28.6,
+          "cumulativeCount": 7,
+          "cumulativePercent": 100.0
+        }
+      ]
+    },
+    "Todos": {
+      "total": 100,
+      "porOrigem": [
+        {
+          "categoria": "Clínica externa",
+          "count": 44,
+          "percent": 44.0,
+          "cumulativeCount": 44,
+          "cumulativePercent": 44.0
+        },
+        {
+          "categoria": "Ambulatório do hospital",
+          "count": 33,
+          "percent": 33.0,
+          "cumulativeCount": 77,
+          "cumulativePercent": 77.0
+        },
+        {
+          "categoria": "Internação",
+          "count": 23,
+          "percent": 23.0,
+          "cumulativeCount": 100,
+          "cumulativePercent": 100.0
+        }
+      ],
+      "porTurno": [
+        {
+          "categoria": "Manhã",
+          "count": 36,
+          "percent": 36.0,
+          "cumulativeCount": 36,
+          "cumulativePercent": 36.0
+        },
+        {
+          "categoria": "Noite",
+          "count": 36,
+          "percent": 36.0,
+          "cumulativeCount": 72,
+          "cumulativePercent": 72.0
+        },
+        {
+          "categoria": "Tarde",
+          "count": 28,
+          "percent": 28.0,
+          "cumulativeCount": 100,
+          "cumulativePercent": 100.0
+        }
+      ],
+      "porMes": [
+        {
+          "categoria": "Setembro",
+          "count": 44,
+          "percent": 44.0,
+          "cumulativeCount": 44,
+          "cumulativePercent": 44.0
+        },
+        {
+          "categoria": "Agosto",
+          "count": 36,
+          "percent": 36.0,
+          "cumulativeCount": 80,
+          "cumulativePercent": 80.0
+        },
+        {
+          "categoria": "Julho",
+          "count": 20,
+          "percent": 20.0,
+          "cumulativeCount": 100,
+          "cumulativePercent": 100.0
+        }
+      ],
+      "porTipoExame": [
+        {
+          "categoria": "Raio-X",
+          "count": 34,
+          "percent": 34.0,
+          "cumulativeCount": 34,
+          "cumulativePercent": 34.0
+        },
+        {
+          "categoria": "Tomografia",
+          "count": 28,
+          "percent": 28.0,
+          "cumulativeCount": 62,
+          "cumulativePercent": 62.0
+        },
+        {
+          "categoria": "Ressonância",
+          "count": 22,
+          "percent": 22.0,
+          "cumulativeCount": 84,
+          "cumulativePercent": 84.0
+        },
+        {
+          "categoria": "Ultrassonografia",
+          "count": 16,
+          "percent": 16.0,
+          "cumulativeCount": 100,
+          "cumulativePercent": 100.0
+        }
+      ]
+    }
+  },
+  "registros": [
+    {
+      "id": "OC-001",
+      "mes": "Julho",
+      "turno": "Manhã",
+      "origem": "Clínica externa",
+      "tipoExame": "Raio-X",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-002",
+      "mes": "Julho",
+      "turno": "Noite",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Raio-X",
+      "motivo": "Falha na realização do exame"
+    },
+    {
+      "id": "OC-003",
+      "mes": "Julho",
+      "turno": "Noite",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Raio-X",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-004",
+      "mes": "Julho",
+      "turno": "Tarde",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Ultrassonografia",
+      "motivo": "Erro de cadastro"
+    },
+    {
+      "id": "OC-005",
+      "mes": "Julho",
+      "turno": "Noite",
+      "origem": "Internação",
+      "tipoExame": "Ressonância",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-006",
+      "mes": "Julho",
+      "turno": "Manhã",
+      "origem": "Clínica externa",
+      "tipoExame": "Ressonância",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-007",
+      "mes": "Julho",
+      "turno": "Manhã",
+      "origem": "Clínica externa",
+      "tipoExame": "Raio-X",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-008",
+      "mes": "Julho",
+      "turno": "Noite",
+      "origem": "Internação",
+      "tipoExame": "Tomografia",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-009",
+      "mes": "Julho",
+      "turno": "Manhã",
+      "origem": "Internação",
+      "tipoExame": "Ultrassonografia",
+      "motivo": "Erro de digitação no laudo"
+    },
+    {
+      "id": "OC-010",
+      "mes": "Julho",
+      "turno": "Noite",
+      "origem": "Clínica externa",
+      "tipoExame": "Raio-X",
+      "motivo": "Falha na realização do exame"
+    },
+    {
+      "id": "OC-011",
+      "mes": "Julho",
+      "turno": "Noite",
+      "origem": "Internação",
+      "tipoExame": "Raio-X",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-012",
+      "mes": "Julho",
+      "turno": "Manhã",
+      "origem": "Internação",
+      "tipoExame": "Ultrassonografia",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-013",
+      "mes": "Julho",
+      "turno": "Tarde",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Raio-X",
+      "motivo": "Autorização do convênio pendente"
+    },
+    {
+      "id": "OC-014",
+      "mes": "Julho",
+      "turno": "Noite",
+      "origem": "Internação",
+      "tipoExame": "Tomografia",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-015",
+      "mes": "Julho",
+      "turno": "Manhã",
+      "origem": "Clínica externa",
+      "tipoExame": "Raio-X",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-016",
+      "mes": "Julho",
+      "turno": "Tarde",
+      "origem": "Clínica externa",
+      "tipoExame": "Ultrassonografia",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-017",
+      "mes": "Julho",
+      "turno": "Manhã",
+      "origem": "Clínica externa",
+      "tipoExame": "Tomografia",
+      "motivo": "Erro de cadastro"
+    },
+    {
+      "id": "OC-018",
+      "mes": "Julho",
+      "turno": "Tarde",
+      "origem": "Clínica externa",
+      "tipoExame": "Tomografia",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-019",
+      "mes": "Julho",
+      "turno": "Tarde",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Tomografia",
+      "motivo": "Falha na realização do exame"
+    },
+    {
+      "id": "OC-020",
+      "mes": "Julho",
+      "turno": "Noite",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Raio-X",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-021",
+      "mes": "Agosto",
+      "turno": "Tarde",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Raio-X",
+      "motivo": "Autorização do convênio pendente"
+    },
+    {
+      "id": "OC-022",
+      "mes": "Agosto",
+      "turno": "Noite",
+      "origem": "Internação",
+      "tipoExame": "Raio-X",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-023",
+      "mes": "Agosto",
+      "turno": "Tarde",
+      "origem": "Clínica externa",
+      "tipoExame": "Raio-X",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-024",
+      "mes": "Agosto",
+      "turno": "Manhã",
+      "origem": "Clínica externa",
+      "tipoExame": "Ressonância",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-025",
+      "mes": "Agosto",
+      "turno": "Manhã",
+      "origem": "Clínica externa",
+      "tipoExame": "Ressonância",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-026",
+      "mes": "Agosto",
+      "turno": "Tarde",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Raio-X",
+      "motivo": "Autorização do convênio pendente"
+    },
+    {
+      "id": "OC-027",
+      "mes": "Agosto",
+      "turno": "Tarde",
+      "origem": "Clínica externa",
+      "tipoExame": "Ressonância",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-028",
+      "mes": "Agosto",
+      "turno": "Manhã",
+      "origem": "Clínica externa",
+      "tipoExame": "Ultrassonografia",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-029",
+      "mes": "Agosto",
+      "turno": "Tarde",
+      "origem": "Clínica externa",
+      "tipoExame": "Ressonância",
+      "motivo": "Autorização do convênio pendente"
+    },
+    {
+      "id": "OC-030",
+      "mes": "Agosto",
+      "turno": "Manhã",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Ressonância",
+      "motivo": "Autorização do convênio pendente"
+    },
+    {
+      "id": "OC-031",
+      "mes": "Agosto",
+      "turno": "Noite",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Raio-X",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-032",
+      "mes": "Agosto",
+      "turno": "Manhã",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Tomografia",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-033",
+      "mes": "Agosto",
+      "turno": "Manhã",
+      "origem": "Clínica externa",
+      "tipoExame": "Tomografia",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-034",
+      "mes": "Agosto",
+      "turno": "Manhã",
+      "origem": "Clínica externa",
+      "tipoExame": "Ultrassonografia",
+      "motivo": "Autorização do convênio pendente"
+    },
+    {
+      "id": "OC-035",
+      "mes": "Agosto",
+      "turno": "Tarde",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Raio-X",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-036",
+      "mes": "Agosto",
+      "turno": "Tarde",
+      "origem": "Internação",
+      "tipoExame": "Ultrassonografia",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-037",
+      "mes": "Agosto",
+      "turno": "Manhã",
+      "origem": "Internação",
+      "tipoExame": "Ressonância",
+      "motivo": "Erro de cadastro"
+    },
+    {
+      "id": "OC-038",
+      "mes": "Agosto",
+      "turno": "Manhã",
+      "origem": "Clínica externa",
+      "tipoExame": "Raio-X",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-039",
+      "mes": "Agosto",
+      "turno": "Noite",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Raio-X",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-040",
+      "mes": "Agosto",
+      "turno": "Manhã",
+      "origem": "Clínica externa",
+      "tipoExame": "Tomografia",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-041",
+      "mes": "Agosto",
+      "turno": "Noite",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Raio-X",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-042",
+      "mes": "Agosto",
+      "turno": "Noite",
+      "origem": "Internação",
+      "tipoExame": "Raio-X",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-043",
+      "mes": "Agosto",
+      "turno": "Tarde",
+      "origem": "Clínica externa",
+      "tipoExame": "Tomografia",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-044",
+      "mes": "Agosto",
+      "turno": "Manhã",
+      "origem": "Clínica externa",
+      "tipoExame": "Raio-X",
+      "motivo": "Erro de digitação no laudo"
+    },
+    {
+      "id": "OC-045",
+      "mes": "Agosto",
+      "turno": "Manhã",
+      "origem": "Internação",
+      "tipoExame": "Ultrassonografia",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-046",
+      "mes": "Agosto",
+      "turno": "Tarde",
+      "origem": "Internação",
+      "tipoExame": "Raio-X",
+      "motivo": "Erro de digitação no laudo"
+    },
+    {
+      "id": "OC-047",
+      "mes": "Agosto",
+      "turno": "Tarde",
+      "origem": "Clínica externa",
+      "tipoExame": "Ressonância",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-048",
+      "mes": "Agosto",
+      "turno": "Tarde",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Ultrassonografia",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-049",
+      "mes": "Agosto",
+      "turno": "Tarde",
+      "origem": "Clínica externa",
+      "tipoExame": "Ressonância",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-050",
+      "mes": "Agosto",
+      "turno": "Tarde",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Tomografia",
+      "motivo": "Erro de cadastro"
+    },
+    {
+      "id": "OC-051",
+      "mes": "Agosto",
+      "turno": "Tarde",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Raio-X",
+      "motivo": "Erro de cadastro"
+    },
+    {
+      "id": "OC-052",
+      "mes": "Agosto",
+      "turno": "Noite",
+      "origem": "Internação",
+      "tipoExame": "Raio-X",
+      "motivo": "Falha na realização do exame"
+    },
+    {
+      "id": "OC-053",
+      "mes": "Agosto",
+      "turno": "Noite",
+      "origem": "Clínica externa",
+      "tipoExame": "Tomografia",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-054",
+      "mes": "Agosto",
+      "turno": "Tarde",
+      "origem": "Clínica externa",
+      "tipoExame": "Raio-X",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-055",
+      "mes": "Agosto",
+      "turno": "Tarde",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Ultrassonografia",
+      "motivo": "Erro de digitação no laudo"
+    },
+    {
+      "id": "OC-056",
+      "mes": "Agosto",
+      "turno": "Tarde",
+      "origem": "Clínica externa",
+      "tipoExame": "Ressonância",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-057",
+      "mes": "Setembro",
+      "turno": "Noite",
+      "origem": "Clínica externa",
+      "tipoExame": "Raio-X",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-058",
+      "mes": "Setembro",
+      "turno": "Noite",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Tomografia",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-059",
+      "mes": "Setembro",
+      "turno": "Manhã",
+      "origem": "Clínica externa",
+      "tipoExame": "Raio-X",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-060",
+      "mes": "Setembro",
+      "turno": "Manhã",
+      "origem": "Clínica externa",
+      "tipoExame": "Tomografia",
+      "motivo": "Erro de cadastro"
+    },
+    {
+      "id": "OC-061",
+      "mes": "Setembro",
+      "turno": "Noite",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Tomografia",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-062",
+      "mes": "Setembro",
+      "turno": "Manhã",
+      "origem": "Internação",
+      "tipoExame": "Ultrassonografia",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-063",
+      "mes": "Setembro",
+      "turno": "Noite",
+      "origem": "Clínica externa",
+      "tipoExame": "Ressonância",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-064",
+      "mes": "Setembro",
+      "turno": "Manhã",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Tomografia",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-065",
+      "mes": "Setembro",
+      "turno": "Tarde",
+      "origem": "Internação",
+      "tipoExame": "Tomografia",
+      "motivo": "Falha na realização do exame"
+    },
+    {
+      "id": "OC-066",
+      "mes": "Setembro",
+      "turno": "Noite",
+      "origem": "Clínica externa",
+      "tipoExame": "Raio-X",
+      "motivo": "Falha na realização do exame"
+    },
+    {
+      "id": "OC-067",
+      "mes": "Setembro",
+      "turno": "Noite",
+      "origem": "Clínica externa",
+      "tipoExame": "Tomografia",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-068",
+      "mes": "Setembro",
+      "turno": "Tarde",
+      "origem": "Clínica externa",
+      "tipoExame": "Ressonância",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-069",
+      "mes": "Setembro",
+      "turno": "Noite",
+      "origem": "Internação",
+      "tipoExame": "Raio-X",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-070",
+      "mes": "Setembro",
+      "turno": "Noite",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Tomografia",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-071",
+      "mes": "Setembro",
+      "turno": "Manhã",
+      "origem": "Clínica externa",
+      "tipoExame": "Tomografia",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-072",
+      "mes": "Setembro",
+      "turno": "Noite",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Raio-X",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-073",
+      "mes": "Setembro",
+      "turno": "Noite",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Ressonância",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-074",
+      "mes": "Setembro",
+      "turno": "Noite",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Raio-X",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-075",
+      "mes": "Setembro",
+      "turno": "Tarde",
+      "origem": "Clínica externa",
+      "tipoExame": "Raio-X",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-076",
+      "mes": "Setembro",
+      "turno": "Noite",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Raio-X",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-077",
+      "mes": "Setembro",
+      "turno": "Noite",
+      "origem": "Internação",
+      "tipoExame": "Ressonância",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-078",
+      "mes": "Setembro",
+      "turno": "Manhã",
+      "origem": "Clínica externa",
+      "tipoExame": "Tomografia",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-079",
+      "mes": "Setembro",
+      "turno": "Manhã",
+      "origem": "Clínica externa",
+      "tipoExame": "Raio-X",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-080",
+      "mes": "Setembro",
+      "turno": "Noite",
+      "origem": "Clínica externa",
+      "tipoExame": "Ressonância",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-081",
+      "mes": "Setembro",
+      "turno": "Manhã",
+      "origem": "Clínica externa",
+      "tipoExame": "Tomografia",
+      "motivo": "Falha na realização do exame"
+    },
+    {
+      "id": "OC-082",
+      "mes": "Setembro",
+      "turno": "Noite",
+      "origem": "Clínica externa",
+      "tipoExame": "Tomografia",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-083",
+      "mes": "Setembro",
+      "turno": "Manhã",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Ultrassonografia",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-084",
+      "mes": "Setembro",
+      "turno": "Noite",
+      "origem": "Internação",
+      "tipoExame": "Ressonância",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-085",
+      "mes": "Setembro",
+      "turno": "Manhã",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Ultrassonografia",
+      "motivo": "Erro de cadastro"
+    },
+    {
+      "id": "OC-086",
+      "mes": "Setembro",
+      "turno": "Manhã",
+      "origem": "Clínica externa",
+      "tipoExame": "Ressonância",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-087",
+      "mes": "Setembro",
+      "turno": "Noite",
+      "origem": "Clínica externa",
+      "tipoExame": "Tomografia",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-088",
+      "mes": "Setembro",
+      "turno": "Manhã",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Ultrassonografia",
+      "motivo": "Falha na realização do exame"
+    },
+    {
+      "id": "OC-089",
+      "mes": "Setembro",
+      "turno": "Tarde",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Ressonância",
+      "motivo": "Falha na realização do exame"
+    },
+    {
+      "id": "OC-090",
+      "mes": "Setembro",
+      "turno": "Noite",
+      "origem": "Internação",
+      "tipoExame": "Raio-X",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-091",
+      "mes": "Setembro",
+      "turno": "Manhã",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Ultrassonografia",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-092",
+      "mes": "Setembro",
+      "turno": "Noite",
+      "origem": "Internação",
+      "tipoExame": "Ressonância",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-093",
+      "mes": "Setembro",
+      "turno": "Manhã",
+      "origem": "Clínica externa",
+      "tipoExame": "Ressonância",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-094",
+      "mes": "Setembro",
+      "turno": "Manhã",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Ultrassonografia",
+      "motivo": "Autorização do convênio pendente"
+    },
+    {
+      "id": "OC-095",
+      "mes": "Setembro",
+      "turno": "Tarde",
+      "origem": "Internação",
+      "tipoExame": "Tomografia",
+      "motivo": "Erro de digitação no laudo"
+    },
+    {
+      "id": "OC-096",
+      "mes": "Setembro",
+      "turno": "Manhã",
+      "origem": "Clínica externa",
+      "tipoExame": "Tomografia",
+      "motivo": "Pedido médico incompleto"
+    },
+    {
+      "id": "OC-097",
+      "mes": "Setembro",
+      "turno": "Noite",
+      "origem": "Internação",
+      "tipoExame": "Tomografia",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-098",
+      "mes": "Setembro",
+      "turno": "Manhã",
+      "origem": "Clínica externa",
+      "tipoExame": "Ressonância",
+      "motivo": "Falha na realização do exame"
+    },
+    {
+      "id": "OC-099",
+      "mes": "Setembro",
+      "turno": "Noite",
+      "origem": "Internação",
+      "tipoExame": "Tomografia",
+      "motivo": "Fila de laudos"
+    },
+    {
+      "id": "OC-100",
+      "mes": "Setembro",
+      "turno": "Tarde",
+      "origem": "Ambulatório do hospital",
+      "tipoExame": "Tomografia",
+      "motivo": "Erro de cadastro"
+    }
+  ]
+}
